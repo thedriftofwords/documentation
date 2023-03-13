@@ -1,5 +1,6 @@
 ---
 import * as CONFIG from "../../config"
+import ThemeIcon from "../ThemeIcon.astro"
 import { Frontmatter, MENU } from "../../config/index"
 import SkipToContent from "./SkipToContent.astro"
 import SidebarToggle from "./SidebarToggle.tsx"
@@ -52,6 +53,7 @@ const section = frontmatter?.section ?? undefined
     <div class="menu-toggle">
       <SidebarToggle client:idle />
     </div>
+    <ThemeIcon />
   </nav>
 </header>
 <NotificationBanner />
